@@ -16,7 +16,7 @@ class EpisodeController
         $this->twig = $twig;
     }
 
-    public function index(): string
+    public function index(): string {
     
         $episodes = $this->api->fetchEpisodes();
         $template = $this->twig->load('episodes.index.twig');
